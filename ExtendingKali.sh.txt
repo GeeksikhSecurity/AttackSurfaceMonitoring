@@ -1,0 +1,53 @@
+# Tools to install on fresh Kali VM:
+# pick source folder to install tools
+apt-get install python3
+git clone https://github.com/ssstonebraker/OSWA 
+sudo apt-get install seclists
+sudo apt-get install payloadsallthethings
+sudo apt-get install gobuster
+git clone https://github.com/grahamzemel/WebHeckScanner
+git clone https://github.com/t3l3machus/Villain
+git clone https://github.com/t3l3machus/eviltree
+git clone https://github.com/t3l3machus/wwwtree
+git clone https://github.com/t3l3machus/pentest-pivoting
+git clone https://github.com/t3l3machus/cybersec-service-metrics
+git clone https://github.com/ssstonebraker/braker-scripts
+git clone https://github.com/ssstonebraker/pentesting
+git clone https://github.com/epi052/recon-pipeline
+git clone https://github.com/epi052/osed-scripts
+git clone https://github.com/epi052/feroxbuster
+git clone https://github.com/epi052/LibAFL
+git clone https://github.com/epi052/reverse-shell-generator
+# Using meg to distribute scans across targets https://blog.intigriti.com/2022/02/01/hacker-tools-meg/
+git clone https://github.com/tomnomnom/meg
+git clone https://github.com/assetnote/kiterunner.git
+git clone https://github.com/michenriksen/aquatone.git
+git clone https://github.com/s0md3v/Arjun
+git clone https://github.com/s0md3v/XSStrike.git
+cd XSStrike
+pip3 install -r requirements.txt
+cd ..
+git clone https://github.com/ssstonebraker/Pentest-Service-Enumeration.git
+cd Pentest-Service-Enumeration
+./install.sh
+cd ..
+git clone https://github.com/1N3/Sn1per
+cd Sn1per
+bash install.sh
+cd ..
+git clone https://github.com/superhedgy/AttackSurfaceMapper
+cd AttackSurfaceMapper
+python3 -m pip install --no-cache-dir -r requirements.txt
+cd ..
+ git clone https://github.com/smicallef/spiderfoot.git
+ cd spiderfoot
+ pip3 install -r requirements.txt
+ python3 ./sf.py -l 127.0.0.1:5001
+git clone https://github.com/Micro0x00/Arsenal.git
+cd Arsenal
+sudo chmod +x Arsenal.sh
+sudo ./Arsenal.sh 
+cd ..
+ cd..
+git clone https://github.com/yogeshojha/rengine && cd rengine
+nano .env
