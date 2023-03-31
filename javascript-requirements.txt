@@ -1,0 +1,11 @@
+The JavaScript code uses the child_process module to execute shell commands and the built-in fs module to read and write files.
+
+The scanSubdomain function is essentially the same as the Python version, but uses backticks to run shell commands and the toString method to convert the output to a string.
+
+The scanSubdomains function and outputReport function are also similar to the Python version, but use the fs module to write the report to a file.
+
+The readSubdomains function reads the subdomains from the specified file and uses the split method to split the string into an array of subdomains.
+
+Finally, the attackSurfaceMonitoring function calls setInterval to run the scanSubdomains function at regular intervals and uses console.clear and console.log to display the report in the console.
+
+Note that this code assumes that you have Node.js installed and have installed the necessary tools (Nmap, Nikto, Dirb, and AttackSurfaceMapper) and have asm.py in the same directory as the script.
