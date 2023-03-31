@@ -56,3 +56,12 @@ python
 
 report = scan_subdomains(subdomains)
 print(report)
+
+
+The scan_subdomain function uses AttackSurfaceMapper to map out the attack surface of the website. The function runs AttackSurfaceMapper with the target subdomain and saves the output to the vulnerabilities dictionary with the key 'asm'.
+ 
+ The scan_subdomains function has also been calls scan_subdomain for each subdomain and include the output from AttackSurfaceMapper in the report.
+ 
+ The script scans the attack surface of a website, including identifying potential attack vectors and vulnerabilities. 
+ 
+ Note that you will need to have AttackSurfaceMapper installed and asm.py in the same directory as the script for this to work.
